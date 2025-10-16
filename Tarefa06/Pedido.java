@@ -29,12 +29,6 @@ public class Pedido {
         itens.remove(item);
     }
 
-    public void aplicarDesconto(double percentual) {
-        for (ItemPedido item : itens) {
-            item.precoUnitario = item.precoUnitario * (1 - percentual / 100.0);
-        }
-    }
-
     public boolean confirmarPedido() {
         if (metodoPagamento != null && metodoPagamento.processarPagamento(calcularTotal())) {
             statusPedido = StatusPedido.PROCESSANDO;
