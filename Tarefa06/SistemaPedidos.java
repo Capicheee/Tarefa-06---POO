@@ -1,10 +1,8 @@
 package Tarefa06;
 
-import java.time.LocalDate;
-
 public class SistemaPedidos {
     public static void main(String[] args) {
-        Cliente cliente = new ClientePF("Ju", "jkws@gmail.com", "123.456.789-00", LocalDate.of(1990, 1, 1));
+        Cliente cliente = new ClientePF("Ju", "jkws@gmail.com", "123.456.789-00");
         Cliente cliente2 = new ClientePJ("Luis", "luis@gmail.com", "12.345.678/0001-00", "Empresa X", "123456789");
 
         System.out.println(cliente.getIdentificadorUnico());
