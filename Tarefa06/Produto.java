@@ -11,7 +11,7 @@ public class Produto {
         this.nome = nome;
         this.preco = preco;
         this.estoque = 0;
-        this.id = java.util.UUID.randomUUID().toString();
+        this.id = id;
         this.descricao = "";
     }
 
